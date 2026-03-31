@@ -8,16 +8,30 @@ export default function Basic_hook() {  //hooks are for UI updation.
 
     let addbtn = () => {
         // console.log("clicked", counter);
-
-        counter = counter + 1;
+        //Assignment:
+        if(counter < 20){
+            counter = counter + 1;
+            setCounter(counter); 
+        }
+        else{
+            counter;
+        }
+        // counter = counter + 1;
+        // setCounter(counter); 
         // setCounter(counter + 1); another way
-        setCounter(counter);
 
     }
 
     let removeVal = () => {
-        counter = counter - 1;
-        setCounter(counter);
+        if(counter > 0){
+            counter = counter - 1;
+            setCounter(counter); 
+        }
+        else{
+            counter;
+        }
+        // counter = counter - 1;
+        // setCounter(counter);
     }
 
     return (
