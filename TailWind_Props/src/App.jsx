@@ -7,7 +7,8 @@ function App() {
     <>
       <h1 className="bg-green-400 text-black mb-4">Tailwind + Vite</h1>
 
-      <Card id={data} />
+      <Card data={data} />
+      {/* <Card data={data2} /> */}
     </>
   )
 }

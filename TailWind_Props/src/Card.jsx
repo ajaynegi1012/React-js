@@ -1,7 +1,7 @@
 import React from 'react'
 
-function Card(props) {
-    console.log(props);
+function Card(props = "nothing") {  //here nothing is the default value here.
+    console.log(props.data);
     return (
         <>
             <div className="max-w-xs rounded-md shadow-md bg-black text-gray-100">
@@ -12,12 +12,10 @@ function Card(props) {
                 />
                 <div className="flex flex-col justify-between p-6 space-y-8">
                     <div className="space-y-2">
-                        <h2 className="text-3xl font-semibold tracking-wide">Lorem</h2>
-                        <h2 className="text-3xl font-semibold tracking-wide">Dev</h2>
+                        <h2 className="text-3xl font-semibold tracking-wide">{props.data.name} </h2>
+                        <h2 className="text-3xl font-semibold tracking-wide">{props.data.title} </h2>
                         <p className="text-gray-400">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
-                            tempora ipsum soluta amet corporis accusantium aliquid consectetur
-                            eaque!
+                            {props.data.description}
                         </p>
                     </div>
                     <button
