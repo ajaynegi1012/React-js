@@ -1,5 +1,6 @@
 import FirstFile from "./firstFile"
 import Basic_hook from "./hooks/Basic_hook"
+import Task from "./hooks/task"
 
 function App() {
 
@@ -7,7 +8,8 @@ function App() {
     <>
       {/* <h2>Hello from react js</h2> */}
       {/* <FirstFile /> */}
-      <Basic_hook/>
+      {/* <Basic_hook/> */}
+      <Task />
     </>
   )
 }
