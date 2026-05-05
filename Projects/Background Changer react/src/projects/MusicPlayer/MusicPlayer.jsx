@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../assets/style/MusicPlayer.css';
-import headPhoneImg from '../../assets/images/headPhone.jpeg'
+import headPhoneImg from '../../assets/images/headPhone.jpeg';
+import previousIcon from '../../assets/Icons/previous.svg';
 
 function MusicPlayer() {
     return (
@@ -14,9 +15,13 @@ function MusicPlayer() {
                     <div className="controller-container">
                         <span>loop</span>
                         <div className="play-pause-container">
-                            <button>previous</button>
-                            <button>play/pause</button>
-                            <button>next</button>
+                            {/* <button> */}
+                                <previousIcon className="previousIcon" />
+                                <previousIcon className="previousIcon" />
+                                <previousIcon className="previousIcon" />
+                            {/* </button> */}
+                            {/* <button>play/pause</button>
+                            <button>next</button> */}
                         </div>
                         <span>timer</span>
                     </div>
