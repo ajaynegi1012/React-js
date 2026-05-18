@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../assets/style/MusicPlayer.css';
 import headPhoneImg from '../../assets/images/headPhone.jpeg';
-import previousIcon from '../../assets/Icons/previous.svg';
+import playpause from '../../assets/images/play-button.png';
 
 function MusicPlayer() {
     return (
@@ -10,18 +10,21 @@ function MusicPlayer() {
                 <div className="img-container">
                     <img className='img' src={headPhoneImg} alt="img" />
                 </div>
+                    {/* <span className='song-track'>Song track</span> */}
+                    <hr className='song-track' />
                 <div className="bottom-container">
-                    <span>Song track</span>
                     <div className="controller-container">
                         <span>loop</span>
                         <div className="play-pause-container">
-                            {/* <button> */}
-                                <previousIcon className="previousIcon" />
-                                <previousIcon className="previousIcon" />
-                                <previousIcon className="previousIcon" />
-                            {/* </button> */}
-                            {/* <button>play/pause</button>
-                            <button>next</button> */}
+                            <button>
+                                <img src={playpause} className='play-pause' />
+                            </button>
+                            <button>
+                                <img src={playpause} className='play-pause' />
+                            </button>
+                            <button>
+                                <img src={playpause} className='play-pause' />
+                            </button>
                         </div>
                         <span>timer</span>
                     </div>

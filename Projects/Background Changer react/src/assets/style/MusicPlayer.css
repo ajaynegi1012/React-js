@@ -33,12 +33,24 @@
     height: 100;
 }
 
+.song-track{
+    margin-top: 15px;
+    /* color: black; */
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 .controller-container, .play-pause-container {
     display: flex;
     justify-content: space-between;
     gap: 8px;
     align-items: center;
     cursor: pointer;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0px 15px;
     /* text-align: center; */
 }
 
@@ -46,11 +58,10 @@ button{
     cursor: pointer;
 }
 
-.previousIcon{
-    -webkit-mask: url("../Icons/previous.svg") no-repeat center;
-    mask-image: url("../Icons/previous.svg") no-repeat center;
-    display: block;
-    width: 12px;
-    height: 12px;
-    background-color: black;
+.play-pause{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: black;
+    gap: 10px;
 }
