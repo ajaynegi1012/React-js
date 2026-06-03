@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import '../../assets/style/MusicPlayer.css';
-import headPhoneImg from '../../assets/images/headPhone.jpeg';
-import previousIcon from '../../assets/images/previous.png';
-import playIcon from '../../assets/images/play-button.png';
-import nextIcon from '../../assets/images/next.png';
-import pauseIcon from '../../assets/images/pauseBtn.png';
-import loopIcon from '../../assets/images/loop.png';
-import clockIcon from '../../assets/images/clock.png';
-import music from '../../assets/Audio/audio1.m4a';
+import '../assets/style/MusicPlayer.css'
+import headPhoneImg from '../assets/images/headPhone.jpeg';
+import previousIcon from '../assets/images/previous.png';
+import playIcon from '../assets/images/play-button.png';
+import nextIcon from '../assets/images/next.png';
+import pauseIcon from '../assets/images/pauseBtn.png';
+import loopIcon from '../assets/images/loop.png';
+import clockIcon from '../assets/images/clock.png';
+import music from '../assets/Audio/audio1.m4a';
 import useSound from 'use-sound';
 function MusicPlayer() {
 
     const [isPlaying, setIsPlaying] = useState(false);
-    const [play, {pause,duration,sound}] = useSound(music);
+    // const [play, {pause,duration,sound}] = useSound(music);
 
     const playingButton = () =>{
         if(isPlaying){
