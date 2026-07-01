@@ -16,6 +16,13 @@ function PasswordGenerator() {
     if(charAllowed){
       str = str + "!@#$%^&*-_+=[]{}`~";
     }
+
+    for (let i = 1; i < array.length; i++) {
+      let char = Math.floor(Math.random() * str.length()+1);  //+1 is because as index start with 0.
+      pass = str.charAt(char);  
+    }
+
+    setPassword(pass);
     
   }, [length, numAllowed, charAllowed, setPassword])
 
