@@ -28,7 +28,7 @@ function PasswordGenerator() {
 
   return (
     <>
-      <h3 className="text-4xl text-center text-white ">PasswordGenerator</h3>
+      <div className='w-full max-w-md mx-auto rounded-lg p-4 my-8 text-white bg-gray-400 text-center text-4xl'>test</div>
     </>
   )
 }
