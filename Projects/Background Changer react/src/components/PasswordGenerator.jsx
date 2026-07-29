@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react'
 
 function PasswordGenerator() {
 
-  const [length, setLength] = useState(8);  //For length feild
+  const [length, setLength] = useState(6);  //For length feild
   const [numAllowed, setNumAllowed] = useState(false);
   const [charAllowed, setCharAllowed] = useState(false);
   const [password, setPassword] = useState("password");
@@ -38,6 +38,20 @@ function PasswordGenerator() {
             placeholder='password'
             readOnly //No changes can be done.
           />
+          <button className='outline-none bg-blue-600 text-white shrink-0 px-3 py-0.5 my-4 rounded' >copy</button>
+        </div>
+        <div className='flex text-sm gap-x-2'>
+          <div className='flex items-center gap-x-1'>
+            <input
+              type="range"
+              min={6}
+              max={100}
+              value={length}
+              className='cursor-pointer'
+              onChange={(e) => { setLength(e.target.value) }}
+            />
+            <label>Length: {length}</label>
+          </div>
         </div>
       </div>
     </>
